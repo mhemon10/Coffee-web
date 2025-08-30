@@ -13,3 +13,127 @@ body {
     font-family: "Poppins", sans-serif;
     background: #121212;
 }
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    padding-bottom: 0.3%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.logo img {
+    width: 80px;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: #EDEDED;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+    color: #ff6347;
+}
+
+.others {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.others button {
+    border: none;
+    background: transparent;
+    display: inline-block;
+}
+
+.others button ion-icon {
+    font-size: 30px;
+    color: #EDEDED;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.others button:hover ion-icon {
+    color: #ff6347;
+}
+
+.others button.bar-btn {
+    display: none;
+}
+
+/* Header End */
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #EDEDED;
+    font-weight: 500;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ff6347;
+    font-weight: 300;
+    margin-bottom: 30px;
+    max-width: 650px;
+    line-height: 2;
+}
+
+.hero button {
+    background: #ff6347;
+    color: #EDEDED;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.hero button:hover {
+    letter-spacing: 2px;
+}
+
+.hero-image img {
+    max-width: 700px;
+    width: 100%;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+   0% {transform: translateY(0);}
+   100% {transform: translateY(-20px);}
+}
+
+/* Hero End */
